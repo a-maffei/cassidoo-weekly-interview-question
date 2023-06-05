@@ -8,13 +8,13 @@ const wishes = [
   { name: "Cassidy", num: 4 },
 ];
 
-const mmmPie = (arr, pieces) => {
-  const desiredPieces = arr.reduce(
+const mmmPie = (cakeCrew, piecesPerCake) => {
+  const desiredPieces = cakeCrew.reduce(
     (totalSlices, wish) => totalSlices + wish.num,
     0
   );
 
-  return Math.ceil(desiredPieces / pieces);
+  return Math.ceil(desiredPieces / piecesPerCake);
 };
 
 mmmPie(wishes, 8);
