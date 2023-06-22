@@ -11,3 +11,15 @@ Example:
 
 > trimArray([1, 7], 0, 0)
 > [1, 7] */
+
+
+
+function trimArray(arr, n, m) {
+    const startingPoint = arr.length - m;
+    const newArray = arr.toSpliced(0,n).toSpliced(startingPoint,m)
+    return newArray
+}
+
+function trimArray(arr, n, m) {
+    return arr.slice(n, arr.length - m)
+}
