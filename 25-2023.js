@@ -17,6 +17,7 @@ Given some JSON data, calculate the maximum depth reached. Both arrays and dicti
 
 function depthJSON(input) {
   let depth = 0;
+
   if (typeof input !== "object") {
     return depth;
   }
